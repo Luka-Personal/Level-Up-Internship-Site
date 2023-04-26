@@ -26,6 +26,7 @@ import { CategoriesDataComponent } from './main-box/router-pages/final-stage/cat
 import { TitleImgComponent } from './main-box/title-img/title-img.component';
 import { KeysDataComponent } from './main-box/router-pages/final-stage/keys-data/keys-data.component';
 import { SlotsDateComponent } from './main-box/slot-top-box/slot-top-box.component';
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: '', component: CashGamesComponent },
@@ -62,6 +63,7 @@ export class HammerConfig extends HammerGestureConfig {
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     CommonModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
