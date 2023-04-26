@@ -1,0 +1,28 @@
+.main-box {
+  background-color: #2c3234;
+  border-radius: 1.1rem;
+  border: 0.4rem solid #25292b;
+  border-top: unset;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+p {
+  text-align: center;
+  border-bottom-left-radius: 0.9rem;
+  border-bottom-right-radius: 0.9rem;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 1.6rem 0 2rem;
+  background-color: #171718;
+}
+p > a {
+  color: #ef5a21;
+}
+@media (max-width: 30em) {
+  .main-box {
+    background-color: #25292b;
+  }
+  p {
+    background-color: #25292b;
+  }
+}

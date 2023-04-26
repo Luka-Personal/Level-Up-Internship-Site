@@ -1,0 +1,42 @@
+<app-title [title]="titleSpring1"></app-title>
+<div class="tournament-satellite">
+  <img class="card-left" src="/assets/promo-left-img.png" alt="card left" />
+  <img class="card-right" src="/assets/promo-right-img.png" alt="card right" />
+  <h3>სერიის ფარგლებში, ყოველდღიურად გაიმართება 3 ივენთი:</h3>
+  <div class="clock-box">
+    <div><img src="/assets/clock.png" alt="clock icon" /></div>
+    <span>19:00 / 19:30 / 20:00</span>
+  </div>
+  <div class="text-box__inside">
+    <p>* ყველა ტურნირზე მოხვედრა შესაძლებელია 0 ლარიდან.</p>
+    <p class="width-fix">
+      ტურნირების სრული განრიგის სანახავად გადადი პოკერის ლობიში
+    </p>
+    <input type="button" value="პოკერის ლობი" />
+  </div>
+</div>
+<div class="text-box__outside">
+  <p>* ყველა ტურნირზე მოხვედრა შესაძლებელია 0 ლარიდან.</p>
+  <p class="width-fix">
+    ტურნირების სრული განრიგის სანახავად გადადი პოკერის ლობიში
+  </p>
+  <input type="button" value="პოკერის ლობი" />
+</div>
+<app-title [title]="titleSpring2"></app-title>
+<div class="main-box">
+  <app-top-box [data]="leaderboardDataSpring"></app-top-box>
+  <app-offers-box [offersData]="offersDataSpring"></app-offers-box>
+  <p class="leaderboard-info">
+    * ლიდერბორდის შედეგები განახლდება <a href="#">პოკერის ლობიში</a>
+  </p>
+  <p class="leaderboard-info">
+    * სატურნირო ლიდერბორდის ქულების დათვლაში არ მონაწილეობს ფრიროლები და
+    სატელიტები
+  </p>
+</div>
+<app-side-leaderboard></app-side-leaderboard>
+<app-everyday-offer
+  [offerData]="tournamentInfo"
+  [offerDataMain]="tournamentInfoMain"
+></app-everyday-offer>
+<app-terms-box [termsData]="termsData"></app-terms-box>

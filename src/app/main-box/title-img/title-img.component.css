@@ -1,0 +1,27 @@
+img {
+}
+.title-box {
+  position: relative;
+  padding: 2rem 0;
+  background-color: #2c3234;
+  border-top-left-radius: 1.1rem;
+  border-top-right-radius: 1.1rem;
+  overflow: hidden;
+  height: 8rem;
+  background-image: url(/assets/final-title.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.title-box::after {
+  box-shadow: 0 0 1.3rem #ef5a21;
+  content: "";
+  width: 32rem;
+  height: 0.5rem;
+  position: absolute;
+  top: -0.1rem;
+  border-radius: 1rem;
+  background-color: #ef5a21;
+  left: 50%;
+  transform: translateX(-50%);
+}

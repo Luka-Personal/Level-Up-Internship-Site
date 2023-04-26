@@ -1,0 +1,30 @@
+<div class="main-box">
+  <h3>ᲧᲝᲕᲔᲚᲓᲦᲘᲣᲠᲘ ᲢᲣᲠᲜᲘᲠᲔᲑᲘ ᲓᲐ ᲡᲐᲢᲔᲚᲘᲢᲔᲑᲘ</h3>
+  <div class="grid">
+    <div *ngFor="let card of offerData">
+      <div class="card-info left">
+        <h4>{{ card.titleLeft }}</h4>
+        <p>{{ card.priceLeft }}</p>
+      </div>
+      <div class="card-info right">
+        <p>{{ card.priceRight }}</p>
+        <p class="bottom">{{ card.dateRight }}</p>
+      </div>
+    </div>
+    <div *ngFor="let card of offerDataMain">
+      <div class="card-info left main">
+        <h4 class="main">{{ card.titleLeft }}</h4>
+        <p>{{ card.priceLeft }}</p>
+      </div>
+      <div class="card-info right main">
+        <p>{{ card.priceRight }}</p>
+        <p class="bottom main">{{ card.dateRight }}</p>
+      </div>
+    </div>
+  </div>
+  <p>
+    * სამივე ტურნირის გამარჯვებულები მიიღებენ ბეჭდებს და ფინალურ ეტაპზე, The
+    Lord of the Rings ტურნირზე, იბრძოლებენ The Festival in Malta-ს საგზურის
+    მისაღებად.
+  </p>
+</div>

@@ -1,0 +1,32 @@
+<div class="nav-box">
+  <img src="/assets/logo.png" alt="main-logo" />
+  <div>
+    <input class="btn btn1" type="button" value="Sign up" />
+    <input class="btn btn2" type="button" value="Sign in" />
+  </div>
+</div>
+<div class="main-box">
+  <img src="/assets/banner.jpg" alt="main banner" class="main-banner" />
+  <div class="main-box__inside">
+    <slot-top-box [mainBox]="true" *ngIf="viewportWidth < 500"></slot-top-box>
+    <h3 *ngIf="viewportWidth > 768">
+      მოიპოვე მრავალფეროვანი პრიზები და 10 საგზურიდან ერთ-ერთი
+    </h3>
+    <h3 *ngIf="viewportWidth <= 768">მოიპოვე 10 საგზურიდან ერთ-ერთი</h3>
+    <p>მოხვდი პოკერის ფესტივალზე მალტაში</p>
+    <app-router-switcher></app-router-switcher>
+    <div class="main-box-router__outlet">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="main-slot-box">
+    <div><slot-top-box></slot-top-box></div>
+    <div>
+      <img src="/assets/close.png" alt="close icon" />
+    </div>
+  </div>
+  <div class="play-offer">
+    <input type="button" value="ითამაშე" />
+  </div>
+  <app-similar-carousel-box></app-similar-carousel-box>
+</div>

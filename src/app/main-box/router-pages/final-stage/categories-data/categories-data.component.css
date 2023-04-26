@@ -1,0 +1,19 @@
+.item-box {
+  padding: 1rem;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+}
+.item-box span {
+  text-align: start;
+}
+p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+div {
+  border-radius: 1rem;
+  margin: 0.6rem 1rem;
+  background-color: #1c1d1e;
+}

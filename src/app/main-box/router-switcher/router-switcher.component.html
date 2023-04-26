@@ -1,0 +1,34 @@
+<nav class="main-router__box">
+  <button
+    type="button"
+    routerLink="/"
+    title="Cash Games"
+    routerLinkActive="active-card"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    <p *ngIf="viewportWidth > 500">1-29 აპრილი</p>
+    <p *ngIf="viewportWidth <= 500">28 ოქტ. - 7 ნოემ.</p>
+    <p>Cash Games</p>
+  </button>
+  <button
+    type="button"
+    routerLink="spring-series"
+    title="Spring Series"
+    routerLinkActive="active-card"
+  >
+    <p *ngIf="viewportWidth > 500">13-29 აპრილი</p>
+    <p *ngIf="viewportWidth <= 500">10 - 29 დეკ.</p>
+    <p *ngIf="viewportWidth > 500" class="title">Spring Series</p>
+    <p *ngIf="viewportWidth <= 500" class="title">New Year Series</p>
+  </button>
+  <button
+    type="button"
+    routerLink="final-stage"
+    title="Final Stage"
+    routerLinkActive="active-card"
+  >
+    <p *ngIf="viewportWidth > 500">30 აპრილი</p>
+    <p *ngIf="viewportWidth <= 500">28 ოქტ. - 7 ნოემ.</p>
+    <p class="title">Final Stage</p>
+  </button>
+</nav>

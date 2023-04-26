@@ -1,0 +1,21 @@
+div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.4rem 1.3rem 0.4rem 0.4rem;
+}
+span {
+  color: #fff;
+}
+div > span:first-child {
+  background-color: #555;
+  padding: 0.4rem 1rem;
+  font-size: 1.3rem;
+  border-radius: 1.4rem;
+}
+div > span:last-child {
+  font-size: 1.5rem;
+}
+.main-box {
+  padding: 1.6rem 0 0.2rem 0;
+}

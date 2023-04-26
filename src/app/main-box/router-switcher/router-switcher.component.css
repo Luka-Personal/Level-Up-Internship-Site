@@ -1,0 +1,44 @@
+.main-router__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #fff;
+  margin: 3.6rem 0 3.2rem 0;
+  border-radius: 1.1rem;
+  background-color: #2c3234;
+}
+.main-router__box button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  position: relative;
+}
+p {
+  font-size: 1.4rem;
+}
+button {
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  color: #fff;
+  padding: 1.9rem 0;
+  background-color: transparent;
+  border-radius: 1.1rem;
+}
+.active-card {
+  transform: scale(1.1);
+  background-color: #ef5a21;
+  font-size: 3rem;
+}
+.title {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 18.75em) {
+  .main-router__box {
+    grid-template-columns: 1fr;
+  }
+  .active-card {
+    transform: scale(1.05);
+  }
+}

@@ -1,0 +1,7 @@
+<div [ngClass]="mainBox ? 'main-box' : ''">
+  <span [ngStyle]="{ 'background-color': mainBox ? '#25292B' : '#555;' }"
+    >სლოტები</span
+  >
+  <span *ngIf="!mainBox">10 იანვარი - 12 მარტი</span>
+  <span *ngIf="mainBox">10 ოქტომბერი - 7 ნოემბერი</span>
+</div>

@@ -1,0 +1,16 @@
+<app-title [title]="titleCash"></app-title>
+<div class="main-box">
+  <app-top-box
+    [boxTitle]="titleLeaderboard1"
+    [data]="leaderboardDataCash"
+  ></app-top-box>
+  <app-offers-box [offersData]="offersDataCash"></app-offers-box>
+  <app-top-box
+    [boxTitle]="titleLeaderboard2"
+    [data]="leaderboardDataCash"
+  ></app-top-box>
+  <app-offers-box [offersData]="offersDataCash"></app-offers-box>
+  <p>* ლიდერბორდის შედეგები განახლდება <a href="#">პოკერის ლობიში</a></p>
+</div>
+<app-side-leaderboard></app-side-leaderboard>
+<app-terms-box [termsData]="termsDataCash"></app-terms-box>

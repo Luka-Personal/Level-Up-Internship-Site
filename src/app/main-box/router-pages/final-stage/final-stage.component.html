@@ -1,0 +1,94 @@
+<div class="main-box">
+  <img src="/assets/final-banner.png" alt="final-banner" />
+  <h3>ᲒᲐᲔᲛᲒᲖᲐᲕᲠᲔ THE FESTIVAL IN MALTA-ᲖᲔ!</h3>
+  <p>
+    The Festival სერიების ფარგლებში, ევროპაბეთი უკვე მეორედ აძლევს პოკერის
+    მოთამაშეებს დაუვიწყარი მოგზაურობის შანსს.
+  </p>
+  <app-offers-box
+    [bgGray]="false"
+    [offersData]="offerDataFinal"
+  ></app-offers-box>
+  <div class="category-box">
+    <div>
+      <app-title-sm [title]="titleFinal"></app-title-sm>
+      <br />
+      <app-categories-data
+        *ngFor="let items of categoriesData[0]"
+        [data]="items"
+      ></app-categories-data>
+    </div>
+    <div>
+      <app-title-sm [title]="titleFinal"></app-title-sm>
+      <br />
+      <app-categories-data
+        *ngFor="let items of categoriesData[0]"
+        [data]="items"
+      ></app-categories-data>
+    </div>
+    <div>
+      <app-title-sm [title]="titleFinal"></app-title-sm>
+      <br />
+      <app-categories-data
+        *ngFor="let items of categoriesData[1]"
+        [data]="items"
+      ></app-categories-data>
+    </div>
+  </div>
+</div>
+<div class="second-box">
+  <app-title [title]="titleFinal2"></app-title>
+  <div class="travelcard-box">
+    <div
+      *ngFor="let card of pokerData[0]; let i = index"
+      class="card card{{ i + 1 }}"
+    >
+      <img src="/assets/poker-item-1-ticket-icon.png" alt="poker item" />
+      <div>
+        <h3>{{ card.mainTitle }}</h3>
+        <p class="paragraph">{{ card.paragraph }}</p>
+      </div>
+    </div>
+    <div class="card card4">
+      <div *ngFor="let bigcard of pokerData[1]" class="card card__inner">
+        <img
+          *ngIf="!bigcard.diffIcon"
+          src="/assets/poker-item-1-ticket-icon.png"
+          alt="poker icon"
+        />
+        <img
+          *ngIf="bigcard.diffIcon"
+          src="/assets/poker-item-2-ticket-icon.png"
+          alt="poker icon"
+        />
+        <h3>{{ bigcard.mainTitle }}</h3>
+        <p class="main-paragraph">{{ bigcard.paragraph }}</p>
+        <p [ngStyle]="{ 'padding-top': !bigcard.span ? '2rem' : 0 }">
+          {{ bigcard.paragraph2 }}
+        </p>
+        <p>{{ bigcard.span }}</p>
+      </div>
+    </div>
+    <div class="disclaimer">
+      <p>
+        * თუ მოთამაშე მოიგებს ბეჭედს ორჯერ ან მეტჯერ, ის The Lord of the Rings
+        ტურნირზემოხვდება ბეჭდების შესაბამისი რაოდენობის სტეკით
+      </p>
+      <p>
+        *ტურნირში მონაწილეობის მიღება შეუძლია ნებისმიერ მსურველს 165₾-იანი
+        ბაი-ინის გადახდით.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="third-box">
+  <app-title-img></app-title-img>
+  <h4>
+    მოთამაშეები გარკვეული საპრიზო ადგილების დაკავების შემთხვევაში მიიღებენ
+    საიდუმლო გასაღებს
+  </h4>
+  <div class="secretkeys-box">
+    <app-keys-data [data]="key" *ngFor="let key of keysData"></app-keys-data>
+  </div>
+</div>
+<app-terms-box [termsData]="termsData"></app-terms-box>

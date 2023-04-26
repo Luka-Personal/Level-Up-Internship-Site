@@ -1,0 +1,19 @@
+<div class="main-box">
+  <div
+    [ngStyle]="{ 'background-color': bgGray ? '#25292b' : 'transparent' }"
+    class="inner-box"
+  >
+    <div
+      [ngStyle]="{ backgroundColor: !offer.icon ? '#2C3234' : '#202324' }"
+      class="offer-box"
+      *ngFor="let offer of offersData"
+    >
+      <p [ngStyle]="{ gap: !offer.icon ? '0' : '3' }">
+        <span>
+          <img *ngIf="offer.icon" [src]="offer.icon" alt="offer icon" />
+        </span>
+        {{ offer.text }}
+      </p>
+    </div>
+  </div>
+</div>

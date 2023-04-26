@@ -1,0 +1,35 @@
+<div class="main-box">
+  <div class="inner-box">
+    <h3 *ngIf="!data[0].titleCustom">
+      {{ boxTitle }}
+      <span> <img src="/assets/example-icon.png" alt="example icon" /> </span>
+    </h3>
+    <div class="title-custom" *ngIf="data[0].titleCustom">
+      <p>ქულების დაგროვების მექანიკა</p>
+      <button type="button" title="open">
+        <img src="/assets/mechanic-icon.png" alt="chevron down" />
+      </button>
+    </div>
+    <div class="leaderboard-box">
+      <div class="column-names grid-3cls">
+        <p *ngIf="data[0].place">ადგილი</p>
+        <p *ngIf="!data[0].place">პოზიცია</p>
+        <p>
+          <!-- dasamatebelia aq aikoni romelic araris asetebshi -->
+          ვაუჩერი
+        </p>
+        <p>პრიზი</p>
+      </div>
+      <div class="grid-3cls leaderboard-items" *ngFor="let objData of data[1]">
+        <p class="place">{{ objData.place }}</p>
+        <p class="voucher">{{ objData.voucher }}</p>
+        <p class="prize">
+          <span *ngIf="objData.icon"
+            ><img class="icon" [src]="objData.icon" alt="icon"
+          /></span>
+          {{ objData.prize }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

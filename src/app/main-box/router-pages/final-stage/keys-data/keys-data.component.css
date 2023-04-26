@@ -1,0 +1,24 @@
+div {
+  display: flex;
+  gap: 2rem;
+  background-color: #1e2122;
+  border: 0.2rem solid #2c3234;
+  padding: 1.5rem 2rem;
+  border-radius: 4rem;
+  align-items: center;
+}
+p {
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  border-radius: 100%;
+  box-shadow: 0 0 0.6rem #2c3234;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c3234;
+}
+span {
+  color: #fff;
+  font-size: 1.4rem;
+}

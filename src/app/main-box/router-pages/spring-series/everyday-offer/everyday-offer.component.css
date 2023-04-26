@@ -1,0 +1,142 @@
+.main-box {
+  margin-top: 2.4rem;
+  text-align: center;
+  background-color: #171718;
+  padding: 2rem 2.4rem;
+  border: 0.4rem solid #25292b;
+  border-radius: 1rem;
+}
+h3 {
+  color: #fff;
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
+}
+.grid > div:last-child {
+  grid-column: 1 / 3;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.grid > div {
+  height: 10rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: calc(100% - (0.5vw / 2));
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 0 3rem;
+  border-radius: 1rem;
+}
+
+.grid > div:nth-child(1) {
+  background-image: url("/assets/tournament-bg2.png");
+}
+.grid > div:nth-child(2) {
+  background-image: url("/assets/tournament-bg2.png");
+}
+.grid > div:nth-child(3) {
+  background-image: url("/assets/main-bg.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h4 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+h4.main {
+  font-size: 2.2rem;
+}
+.card-info {
+  height: 4.85rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-info.left p {
+  color: #ffbe00;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: start;
+}
+.card-info.right p {
+  color: #fff;
+  font-size: 1.3rem;
+}
+.card-info.right .bottom {
+  background-color: #b78648;
+  padding: 0.4rem 2.3rem;
+  border-radius: 1.1rem;
+  border-bottom-right-radius: 0;
+}
+.card-info.right .bottom.main {
+  color: #094b3d;
+  background-color: #d7c860;
+}
+.card-info.left.main {
+  height: 5.5rem;
+}
+.card-info.right.main {
+  justify-content: space-evenly;
+}
+.main-box > p {
+  color: #fff;
+  font-size: 1.4rem;
+  max-width: 58.5rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+@media (max-width: 46.75em) {
+  html {
+    font-size: 45%;
+  }
+  .grid > div:nth-child(1) {
+    grid-column: unset;
+  }
+  .grid > div:nth-child(2) {
+    grid-column: unset;
+  }
+  .grid > div:last-child {
+    grid-column: unset;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+  .grid > div {
+    background-position: center;
+  }
+  .grid > div:nth-child(3) {
+    justify-content: space-between;
+  }
+  .grid > div:nth-child(2) {
+    justify-content: space-between;
+  }
+  .grid > div:nth-child(1) {
+    justify-content: space-between;
+  }
+  h4.main {
+    font-size: 1.5rem;
+  }
+  .card-info.left.main {
+    height: unset;
+  }
+}
+@media (max-width: 23.5em) {
+  .main-box {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  .main-box > h3 {
+    font-size: 1.6rem;
+  }
+  .main-box > p {
+    text-align: start;
+  }
+}
